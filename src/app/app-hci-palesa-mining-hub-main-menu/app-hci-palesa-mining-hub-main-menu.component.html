@@ -1,0 +1,110 @@
+<div class="row">
+  <div class="column left">
+    <div class="logo-container">
+      <img
+        src="https://static.wixstatic.com/media/625b29_bcbae5b1a5b74b71a7a222f74c998840~mv2.png"
+        alt="Company Logo"
+      />
+      <img
+        src="https://static.wixstatic.com/media/2cccc3_a4486d061b8249afbe4aa1dbf86eb429~mv2.jpg"
+        alt="Profile Image"
+        class="profile-image"
+      />
+    </div>
+
+    <button
+      class="buttonlist"
+      [class.active]="pageTitle === 'Home'"
+      (click)="
+        changeContent(
+          'Home',
+          'https://analytics.zoho.com/open-view/2721671000001412035/49dcf72150c6a2b906b72f1f6d6cdd00'
+        )
+      "
+    >
+      <span>🏠</span> Home
+    </button>
+
+    <button
+      class="buttonlist"
+      [class.active]="pageTitle === 'Condition Based Monitoring Dashboard'"
+      (click)="
+        changeContent(
+          'Condition Based Monitoring Dashboard',
+          'https://www-maintenance-hub-net.filesusr.com/html/2cccc3_60f794646807d691ccd20af001ce4f0f.html'
+        )
+      "
+    >
+      <span>📊</span> CBM Report
+    </button>
+
+    <button
+      class="buttonlist"
+      [class.active]="pageTitle === 'PDF Reports'"
+      (click)="
+        changeContent(
+          'PDF Reports',
+          'https://wixlabs-drive.appspot.com/widget?pageId=mif7k&compId=comp-kxyg0zcm&viewerCompId=comp-kxyg0zcm&siteRevision=876&viewMode=site&deviceType=desktop&locale=en&tz=America%2FChicago&regionalLanguage=en&width=980&height=1343&instance=IajiSzPgawNkJj-_l8KiR6WfrOboOSEHO1pz2xM_Lek.eyJpbnN0YW5jZUlkIjoiMTdmODRlMTgtOWJmOC00OWEzLTgxYTItNDg1MTVhMmY4ZDhkIiwiYXBwRGVmSWQiOiIxMmQwMzkxZi1mN2EyLTlmNDMtMTUzZC04ODNmOTAxN2UyNTIiLCJtZXRhU2l0ZUlkIjoiZjA1YTY2MzgtNzg4ZC00ZGUzLWFlOWQtY2FjMzdlMjVkNTQ4Iiwic2lnbkRhdGUiOiIyMDI1LTAzLTEyVDA3OjUxOjQ1LjE2NVoiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6IjMxYTY5MTA4LTdjOTAtNGMzNC1hYzVjLTMxYjJlMjhlMDc2NiIsImJpVG9rZW4iOiJlN2EyMjgyMC1lMzc1LTA0NDAtMmYzZi04MjkyMjQwYTU4YzUiLCJzaXRlT3duZXJJZCI6IjYyNWIyOTIxLTc5YzYtNDRiZi04YWNhLWIyMTNlYjc1Y2Q4NyIsImJzIjoibERhTFBrWUUxaXhDNUp2MU9fLVFHTzF5RlRiSm5DVWV5eVNWTl9UU2NiWS5JbU14WVRsall6azBMVFU1T0RFdE5ESm1OQzFoWkdJeUxUVmpNV1UxWm1GbE1UZGtZU0kifQ&currency=USD&currentCurrency=USD&commonConfig=%7B%22brand%22%3A%22wix%22%2C%22host%22%3A%22VIEWER%22%2C%22bsi%22%3A%2246aeab7b-6638-4b4d-83af-2049b5913c9a%7C7%22%2C%22siteRevision%22%3A%22876%22%2C%22renderingFlow%22%3A%22NONE%22%2C%22language%22%3A%22en%22%2C%22locale%22%3A%22en-us%22%2C%22BSI%22%3A%2246aeab7b-6638-4b4d-83af-2049b5913c9a%7C7%22%7D&currentRoute=.%2Fpalesa-pdf-report&vsi=4bc5f3c4-b637-401b-85cf-c8e49fafbd49'
+        )
+      "
+    >
+      <span>📄</span> PDF Report
+    </button>
+
+    <button
+      class="buttonlist"
+      [class.active]="pageTitle === 'Palesa Daily Issues'"
+      (click)="
+        changeContent(
+          'Palesa Daily Issues',
+          'https://forms.zohopublic.com/EAMS_Africa/form/PetroChemicalVibrations/formperma/8PjB8fv0vkqy0w9W0G_Ah4qX8vXsfZTjlG42D1o62LE'
+        )
+      "
+    >
+      <span>📝</span> Work Request
+    </button>
+
+    <button
+      class="buttonlist"
+      [class.active]="pageTitle === 'Work Orders'"
+      (click)="
+        changeContent(
+          'Work Orders',
+          'https://www.appsheet.com/start/9b77f13d-8d18-4fc8-80e8-aac7068a007a#appName=ConMon-5165972&table=Issue+Data&view=Work+Order+Grid'
+        )
+      "
+    >
+      <span>🔧</span> Work Order
+    </button>
+
+    <button
+      class="buttonlist"
+      [class.active]="pageTitle === 'No Access Assets'"
+      (click)="
+        changeContent(
+          'No Access Assets',
+          'https://your-url-for-no-access-assets.com'
+        )
+      "
+    >
+      <span>🚫</span> No Access Assets
+    </button>
+  </div>
+
+  <div class="column right">
+    <div class="title-container">
+      <h1 class="titleh1">{{ pageTitle }}</h1>
+      <a href="mailto:jaco.grobler@eamsafrica.com" class="buttoncontact">
+        <span>✉️</span> Contact Us
+      </a>
+    </div>
+
+    <div class="iframe-container">
+      <iframe
+        class="fullscreen-iframe"
+        [src]="iframeSrc"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </div>
+</div>
